@@ -18,7 +18,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About us</a></li>
-            <li>
+            <!-- <li>
               <select>
                 <option value="English-len">
                   <button id="english">English</button>
@@ -27,7 +27,7 @@
                   <button id="french">French</button>
                 </option>
               </select>
-            </li>
+            </li> -->
           </ul>
           <button onclick="location.href='#contact'" class="contact_btn">
             Contact US
@@ -225,16 +225,18 @@
     <div class="fifth-part" id="contact">
       <h1>Contact Us</h1>
       <form method="POST">
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="E-mail" />
-        <input type="tel" placeholder="Phone" />
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
         <textarea
+          name="text"
+          required
           id=""
           cols="100"
           rows="10"
           placeholder="Put your message here !"
         ></textarea>
-        <input type="submit" value="Send" />
+        <input type="submit" id="sub" value="Send" />
       </form>
     </div>
     <div class="footer">
