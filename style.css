@@ -36,11 +36,16 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+
   font-family: "Kanit", arial, sans-serif;
   background-color: rgb(0, 0, 0);
   color: #fff;
 }
 @media screen and (max-width: 768px) {
+  header {
+    overflow-x: hidden;
+    padding: 25px 15px;
+  }
   body {
     overflow-x: hidden;
   }
@@ -106,6 +111,42 @@ nav ul li select {
 }
 .menu-button {
   display: none;
+}
+.menu-items{
+  position: fixed;
+  right: 25%;
+  top: 14%;
+  background-color:black;
+  z-index: 2;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 25px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+.hidden{
+  display: none;
+}
+
+.menu-items li {
+  list-style: none;
+  transition: .3s;
+}
+hr{
+  width: 200%;
+}
+.menu-items li:hover {
+  border-bottom: 2px solid var(--mainColor);
+  scale: 1.2;
+}
+.menu-items li a{
+  text-decoration: none;
+  color: #fff;
 }
 .logo {
   height: 70px;
@@ -291,10 +332,13 @@ button a {
   .cards {
     width: 100%;
     grid-template-columns: auto;
+    align-content: center;
+    justify-items: center;
   }
   .card {
-    scale: 1.9;
     padding: 5px 0;
+    width: 80%;
+    height: 420px;
   }
   .card .img_container {
     width: 90%;
@@ -327,8 +371,8 @@ button a {
 }
 .third-part .cards .card {
   flex: 0 0 auto;
-  width: 300px !important;
-  min-height: 330px !important;
+  width: 320px ;
+  min-height: 350px ;
   justify-content: center;
   gap: 1.5rem;
 }
@@ -338,7 +382,6 @@ button a {
   display: flex;
   justify-content: flex-start;
   overflow-x: auto; /* Use auto for horizontal scrolling */
-  overflow-x: scroll;
   box-shadow: 0 0 50px 50px black inset;
   border: 2px black inset;
   border-radius: 25px;
@@ -374,23 +417,33 @@ button a {
     width: 100vw;
   }
   .third-part h1 {
+    font-size: 60px;
     text-align: center;
   }
   .third-part .content {
-    width: 100vw;
+    /* padding-right: 25px; */
     align-items: center;
+    gap: 0;
   }
   .third-part .content .cards {
-    width: 90%;
+    width: 200%;
     align-items: center;
-    padding: 0 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .third-part .content .cards .card{
+    min-height: 380px;
   }
   .third-part .content .cards .card:first-child {
-    margin-left: 25px;
+    margin-left: 0;
   }
   #next,
   #previous {
     display: none;
+    visibility: hidden;
   }
 }
 /*part four*/
@@ -432,7 +485,7 @@ button a {
   position: relative;
   width: 500px;
   height: 450px;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .features .feature-card {
@@ -607,7 +660,8 @@ input[type="submit"] {
 }
 @media (max-width:768px){
   .footer{
-    width: 100vw;
+    width: 90vw;
+    overflow-x: hidden;
     justify-content: space-between;
     gap: 1rem;
   }
