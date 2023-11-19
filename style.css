@@ -646,6 +646,9 @@ input[type="submit"] {
 }
 .footer ul li {
   list-style: none;
+  transition: .5s;
+  cursor: help;
+
 }
 .footer ul li a {
   color: white;
@@ -654,9 +657,13 @@ input[type="submit"] {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  transition: .5s;
 }
 .social-media{
   display: block;
+}
+.social-media li a:hover,.footer ul li:hover{
+  color: var(--mainColor);
 }
 @media (max-width:768px){
   .footer{
