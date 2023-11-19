@@ -432,6 +432,7 @@ button a {
   position: relative;
   width: 500px;
   height: 450px;
+  margin-top: 5%;
 }
 
 .features .feature-card {
