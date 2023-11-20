@@ -1,29 +1,3 @@
-/*menu button js*/
-const menuButton=document.querySelector('.menu-button');
-const menuItems=document.querySelector('.menu-items');
-const exitButton=document.querySelector('.exit');
-
-menuButton.onclick=()=>{
-  if(menuItems.classList.contains('hidden')){
-
-    menuItems.classList.remove('hidden');
-    menuButton.innerHTML='X';
-    const body =document.body;
-
-    } 
-
-    else{
-        menuItems.classList.add('hidden');
-        menuButton.innerHTML='<i class="fa fa-bars" aria-hidden="true"></i>';
-        }
-}
-
-for(var c=0;menuItems.children.length-1;c++){
-    menuItems.children[c].onclick=()=>{
-        menuItems.classList.add('hidden');
-        menuButton.innerHTML='<i class="fa fa-bars" aria-hidden="true"></i>';
-    }
-}
 /*carousel part*/
 document.addEventListener("DOMContentLoaded", function () {
   // const cardContainer = document.querySelector(".cards");
@@ -49,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (
       cardContainer.scrollLeft <
       cardContainer.scrollWidth - cardContainer.clientWidth
-    ) {
+      ) {
       cardContainer.scrollLeft += scrollDistance;
     } else {
       cardContainer.scrollLeft = 0;
@@ -84,3 +58,29 @@ form.addEventListener("submit", (e) => {
     document.getElementById("sub").value = "You are already registered!";
   }
 });
+  /*menu button js*/
+  const menuButton=document.querySelector('.menu-button');
+  const menuItems=document.querySelector('.menu-items');
+  const exitButton=document.querySelector('.exit');
+  
+  menuButton.onclick=()=>{
+    if(menuItems.classList.contains('hidden')){
+  
+      menuItems.classList.remove('hidden');
+      menuButton.innerHTML='X';
+      const body =document.body;
+  
+      } 
+  
+      else{
+          menuItems.classList.add('hidden');
+          menuButton.innerHTML='<i class="fa fa-bars" aria-hidden="true"></i>';
+          }
+  }
+  
+  for(var c=0;menuItems.children.length-1;c++){
+      menuItems.children[c].onclick=()=>{
+          menuItems.classList.add('hidden');
+          menuButton.innerHTML='<i class="fa fa-bars" aria-hidden="true"></i>';
+      }
+  }
