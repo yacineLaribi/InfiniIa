@@ -100,17 +100,21 @@ nav ul li a {
   text-decoration: none;
   font-weight: 600;
 }
-nav ul li select {
+select {
   padding: 10px 5px;
+  /* margin-top: 0; */
   background-color: white;
-  width: 55px;
+  width: 70px;
   color: black;
   border-radius: 15px;
   border: none;
   outline: none;
 }
+
 .menu-button {
   display: none;
+  border-radius:50%;
+  padding:auto;
 }
 .menu-items{
   position: fixed;
@@ -676,4 +680,19 @@ input[type="submit"] {
     display: none;
   }
  
+}
+ .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none !important;
+}
+.skiptranslate{
+  position: relative;
+}
+.skiptranslate::after{
+  content: ' ';
+  background-color: #000;
+  width: 100px;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

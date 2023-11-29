@@ -84,3 +84,23 @@ form.addEventListener("submit", (e) => {
           menuButton.innerHTML='<i class="fa fa-bars" aria-hidden="true"></i>';
       }
   }
+
+
+
+  function googleTranslateElementInit(){
+    new google.translate.TranslateElement(
+      {
+        pageLanguage:'en',
+      includedLanguages: 'en,fr,ar',
+      defaultLanguage: 'en',},
+      'google_translate_element',
+      'google_translate_elements'
+    );
+    
+  }
+  var selectLanguageElement = document.querySelector('select');
+  console.log(selectLanguageElement)
+  if(selectLanguageElement){
+    selectLanguageElement[0].innerHTML=' hi';
+  }
+  

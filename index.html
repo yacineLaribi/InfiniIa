@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <title>Infini Ai Technologies</title>
   </head>
 
@@ -18,22 +19,28 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About us</a></li>
-            <!-- <li>
-              <select>
-                <option value="English-len">
+             <li >
+              
+               <!-- <select>
+                 <option value="English-len">
                   <button id="english">English</button>
                 </option>
                 <option value="French-len">
                   <button id="french">French</button>
                 </option>
-              </select>
-            </li> -->
+              </select> -->
+            </li> 
           </ul>
+          <div style="display: flex; gap:2rem;align-items:center;justify-content:center;">
+            <div id="google_translate_element" style="margin-top: 15px;">
+            </div>
+            <button class="menu-button">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            
+          </div>
           <button onclick="location.href='#contact'" class="contact_btn">
             Contact US
-          </button>
-          <button class="menu-button">
-            <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
         </nav>
         <ul class="menu-items hidden">
@@ -42,6 +49,7 @@
           <li><a href="#projects">Projects</a></li>
           <hr>
           <li><a href="#about">About Us</a></li>
+          
         </ul>
       </header>
       <main>
@@ -274,6 +282,10 @@
         </li>
       </ul>
     </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" ></script>
+    <script>
+      
+    </script>
     <script src="script.js"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
