@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+  <title>Infini IA</title>
+</head>
+
+<body>
+  <div class="first-part" id="particles-js">
+    <header>
+      <nav>
+        <img src="assets/logo.png" height="70" class="logo" />
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#about">À propos de nous</a></li>
+          <li>
+            <!-- <select>
+                 <option value="English-len">
+                  <button id="english">English</button>
+                </option>
+                <option value="French-len">
+                  <button id="french">French</button>
+                </option>
+              </select> -->
+          </li>
+        </ul>
+        <div style="
+              display: flex;
+              gap: 2rem;
+              align-items: center;
+              justify-content: center;
+            ">
+          <div id="google_translate_element" style="margin-top: 15px"></div>
+          <button class="menu-button">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+        <button onclick="location.href='#contact'" class="contact_btn">
+          Contactez nous
+        </button>
+      </nav>
+      <ul class="menu-items hidden">
+        <li><a href="#services">Services</a></li>
+        <hr />
+        <li><a href="#projects">Projets</a></li>
+        <hr />
+        <li><a href="#about">À propos de nous</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="section1">
+        <h1>
+          Exécuter des idées d’initiatives avec les technologies d’<span>IA</span>
+        </h1>
+        <p>
+          Chez Infini IA, nous sommes vos partenaires IA en innovation. Des
+          algorithmes intelligents à l’analyse prédictive, nous élaborons des
+          solutions à la pointe de l’intelligence artificielle. Libérez le
+          potentiel de l’IA avec Infini IA, où des possibilités illimitées
+          rencontrent une technologie de pointe.
+        </p>
+        <button onclick="location.href='#contact'">Contactez nous</button>
+      </div>
+    </main>
+  </div>
+  <div class="second-part" id="services">
+    <h1>Nos Services</h1>
+    <div class="cards">
+      <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+        <div class="img_container">
+          <img src="assets/Excel.png" loading="lazy" />
+        </div>
+        <h2>Étiquetage des bases de données</h2>
+        <p>
+          Précision dans chaque annotation : notre service d'étiquetage des données optimise vos ensembles de données
+          pour la précision de l'apprentissage automatique.
+        </p>
+        <button>Montre Plus</button>
+      </div>
+
+      <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+        <div class="img_container">
+          <img src="assets/neural_networks.png" loading="lazy" />
+        </div>
+        <h2>Creation réseaux de neurones artificiels</h2>
+        <p>
+          Imitant la puissance du cerveau, nos réseaux neuronaux apportent une reconnaissance avancée des formes à vos
+          applications.
+        </p>
+        <button>Montre Plus </button>
+      </div>
+
+      <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+        <div class="img_container">
+          <img src="assets/Deep_Learning.jpg" loading="lazy" />
+        </div>
+        <h2>Modèles d'apprentissage profond</h2>
+        <p>
+          Obtenez des informations et optimisez les processus grâce à nos modèles d’apprentissage profond personnalisés
+          pour une efficacité inégalée.
+        </p>
+        <button>Montre Plus</button>
+      </div>
+
+      <!-- <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div class="img_container">
+            <img src="assets/surveillance.jpg" loading="lazy" />
+          </div>
+          <h2>Proative Monitoring Systems</h2>
+          <p>
+            Stay ahead of disruptions—our monitoring systems analyze metrics,
+            ensuring the continuous health of your systems.
+          </p>
+          <button>Show More</button>
+        </div>
+
+        <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div class="img_container">
+            <img src="assets/bots.jpg" loading="lazy" />
+          </div>
+          <h2>Creating Bots</h2>
+          <p>
+            Enhance user experiences with intelligent, conversational bots that
+            streamline communication.
+          </p>
+          <button>Show More</button>
+        </div>
+
+        <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div class="img_container">
+            <img src="assets/automation.jpg" loading="lazy" />
+          </div>
+          <h2>System Automation</h2>
+          <p>
+            Minimize manual efforts and boost productivity with our tailored
+            system automation solutions.
+          </p>
+          <button>Show More</button>
+        </div> -->
+
+    </div>
+  </div>
+  <div class="second-part" id="projects">
+    <h1>Nos Projets</h1>
+    <!-- <div class="content"> -->
+    <!-- <button id="previous">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button> -->
+    <div class="cards" id="cards">
+
+      <div class="card">
+        <div class="img_container">
+          <img src="assets/neige.jpg" loading="lazy" />
+        </div>
+        <p>
+          Estimation de la quantité de neige
+          accumulée sur les toits des bâtiments.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="img_container">
+          <img src="assets/phone.jpg" loading="lazy" />
+        </div>
+        <p>
+          Prédiction du
+          comportement des usages des bornes électriques.
+        </p>
+      </div>
+      <div class="card">
+        <div class="img_container">
+          <img src="assets/prediction.jpg" loading="lazy" />
+        </div>
+        <p>
+          Prédiction de consommation <br />
+          d'énergie des bâtiments.
+        </p>
+      </div>
+      <div class="card">
+        <div class="img_container">
+          <img src="assets/calcul.jpg" loading="lazy" />
+        </div>
+        <p>
+          Estimation statistique linéaire et non linéaire
+        </p>
+      </div>
+    </div>
+    <!-- <button id="next">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button> -->
+    <!-- </div> -->
+  </div>
+  <div class="fourth-part" id="about">
+    <h1>À propos de nous</h1>
+    <div class="container">
+      <h2>Notre Mission</h2>
+      <p>
+        Infini IA a pour mission de révolutionner les industries grâce à la puissance de l'IA. Nous croyons qu’il faut
+        exploiter le potentiel de l’intelligence artificielle pour générer une efficacité, une précision et une
+        prévoyance sans précédent dans les processus décisionnels.
+      </p>
+      <h3>Pourquoi Infinie IA ?</h3>
+      <p>
+        Infini IA est fier de notre engagement en faveur de la transparence et d'une communication ouverte tout au long
+        du processus de développement. Les clients peuvent nous faire confiance pour leur fournir non seulement des
+        solutions d'IA de pointe, mais également un partenariat fondé sur la confiance, la fiabilité et une vision
+        partagée du succès. Lorsque vous choisissez Infini IA, vous choisissez l'innovation, l'expertise et un
+        engagement à repousser les limites de ce que l'IA peut réaliser. Notre expérience en matière de fourniture de
+        modèles d’IA transformateurs parle de elle-même, faisant de nous le partenaire incontournable de ceux qui
+        n’exigent que le meilleur du monde de l’intelligence artificielle.
+      </p>
+    </div>
+    <div class="features">
+      <div class="feature-card card1">
+        <div class="feature-icon">
+          <img src="assets/goals1.png" alt="" srcset="" />
+        </div>
+        <h3>Confidentialité</h3>
+      </div>
+      <div class="feature-card card2">
+        <div class="feature-icon">
+          <img src="assets/goals2.png" alt="" srcset="" />
+        </div>
+        <h3>Précision</h3>
+      </div>
+      <div class="feature-card card3">
+        <div class="feature-icon">
+          <img src="assets/goals3.png" alt="" srcset="" />
+        </div>
+        <h3>Mise à l'échelle illimité</h3>
+      </div>
+    </div>
+  </div>
+  <div class="fifth-part" id="contact">
+    <h1>Contactez Nous</h1>
+    <form method="POST">
+      <input type="text" name="name" placeholder="Entrez votre Nom et Prénom" required />
+      <input type="email" name="mail" placeholder="Entrez votre Email" required />
+      <input type="tel" name="phone" placeholder="Votre Numéro de Telephone" required />
+      <textarea name="text" required id="" cols="100" rows="10" placeholder="Votre message ici !"></textarea>
+      <input type="submit" id="sub" value="Envoyer" />
+    </form>
+  </div>
+  <div class="footer">
+    <img src="assets/logo.png" class="logo" />
+    <ul class="contact-us">
+      <li>Email : example@infiniia.com</li>
+      <li>Phone : +1 123 456 789</li>
+      <li>Adresse : Somewhere - Canada</li>
+    </ul>
+    <ul class="social-media">
+      <li>
+        <a href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          Facebook
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+  <script src="Vanilla-tilt.js"></script>
+</body>
+
+</html>
